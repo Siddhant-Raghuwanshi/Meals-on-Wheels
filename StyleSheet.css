@@ -1,0 +1,245 @@
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styling */
+#navbar {
+  display: flex;
+  height: 56px;
+  align-items: center;
+  position: relative;
+  justify-content: left;
+}
+
+/* Navbar::before Styling */
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Navigation Bar logo  Styling*/
+#logo {
+  margin: 1em;
+}
+
+/* Navigation Bar image  Styling*/
+#logo img {
+  height: 50px;
+}
+
+/* Navbar ul Styling */
+#navbar ul {
+  display: flex;
+}
+
+/* Navbar ul li Styling */
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+/* Navbar ul li a Styling */
+#navbar ul li a {
+  margin: 2px 8px;
+  display: block;
+  padding: 2px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+/* Navbar ul li a:hover Styling */
+#navbar ul li a:hover {
+  display: block;
+  color: black;
+  background-color: white;
+  box-shadow: 4px 4px 5px 2px;
+  transform:translatey(-4px);
+}
+#container{
+  height: 45rem;
+}
+/* container::before  Section  */
+#container::before {
+  content: "";
+  background-image: url("https://images.pexels.com/photos/326279/pexels-photo-326279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position:center ;
+  background-size: cover;
+  position: absolute;
+  height: 45rem;
+  width: 100%;
+  top: 0px;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/* Home Section  */
+#home {
+  margin: 160px;
+  height: 20em;
+  display: flex;
+  font-size: large;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+#home h1 {
+  color: black;
+  text-align: center;
+  font-family: cursive;
+  font-size: 3.8rem;
+}
+
+.btn {
+  margin: 20px 4px;
+  padding: 3px 5px;
+  color: black;
+  background-color: #68554f;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  transition: all;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 5px 5px 2px 2px #000000;
+  color: white;
+  box-shadow: 4px 4px 5px 2px black;
+  transform:translatey(-4px);
+}
+
+
+/* Services Section */
+#services {
+  display: flex;
+  margin: 34px;
+}
+#services .box {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4ff;
+  border-radius: 20px;
+  margin: 0px 8px;
+  border: 2px solid brown;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#services .box img {
+  padding: 10px;
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+/* #services{} */
+#client-section {
+  margin: 4rem auto;
+  padding: 2rem 0rem;
+  height: 50vh;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  height: 124px;
+}
+.client-items {
+  padding: 34px;
+  margin: 2rem 0rem;
+}
+#client-section::before {
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  z-index: -1;
+  background: url("https://c1.peakpx.com/wallpaper/309/844/959/veggies-vegetables-vegetable-plate-wallpaper-preview.jpg")
+    no-repeat center center/cover;
+}
+
+/* Cotact section */
+#contact {
+  position: relative;
+  margin: 100px auto;
+  padding: 2px 2px;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://www.maxpixel.net/static/photo/1x/Phone-Call-Us-Contact-Message-Send-Contact-Us-4193637.jpg");
+}
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+}
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+label{
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 5vh;
+  font-size: 1.5rem;
+}
+input{
+  width: 40vw;
+  height: 6vh;
+}
+textarea{
+  width: 40vw;
+}
+
+/* Utility classess */
+.para-font-size {
+  font-size: 20px;
+}
+.h-primary {
+  font-size: 3rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-size: 2rem;
+  padding: 12px;
+}
+
+
+.text-center {
+  text-align: center;
+}
+::placeholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+  font-size: 1.1rem;
+}
